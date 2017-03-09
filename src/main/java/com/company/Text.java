@@ -7,7 +7,7 @@ import java.util.*;
 /**
  * Created by jiraff537
  */
-public class Text extends Java12abstract {
+public class Text extends Java12abstract  {
     private int readed = 0; //обработано строк изфайла
     LinkedList<String> ostatok = new LinkedList<>(); //чтобы не делить одно предложение на два файла тут буду хранить его кусок
 

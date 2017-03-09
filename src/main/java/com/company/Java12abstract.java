@@ -9,6 +9,7 @@ import java.nio.file.Paths;
  */
 public abstract class Java12abstract { //абстрактный класс родитель для Text и Dictionary в него поместил их общие черты которые заметил в ТЗ
     String filename;
+    String codepage;  //    OVERRIDE  TRY delete it later //==========QQQ===========================================
 
     //метод присвайт имя файла
     public void setFilename(String filename) {

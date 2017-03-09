@@ -17,6 +17,18 @@ import java.util.regex.Pattern;
  */
 public class Dictionary extends Java12abstract {
 
+
+//    OVERRIDE  TRY delete it later //=============QQQ========================================
+
+    //@Override
+    public void setFilename(String filename,String codepage) {
+        this.filename = filename;
+        this.codepage = codepage;
+    }
+
+//    OVERRIDE  TRY delete it later //================QQQ=====================================
+
+
     //проверка структуры файла
     //содержит произвольное количество строк, каждая из которых содержит ровно одно слово.
     void checkStructure(String pattern) {

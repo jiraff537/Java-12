@@ -1,4 +1,4 @@
-package com.company;
+package main.java.com.company;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +48,7 @@ public class Application {
         final int maxLinesInput = 100000;       //максимальное количество строк входного файла с текстом
         final String insBefore = "<i><b>";      //тег для выделения текста bold+italic
         final String insAfter = "</b></i>";     //закрывающий тег выделения текста bold+italic
-        //МОЁ ДОПУЩЕНИЕ
+        // МОЁ ДОПУЩЕНИЕ
         //для проверки структуры файла_с_текстом и для исключения ситуации когда прийдется делить текст по N(10..100'000) строк,
         // а длинна одного предложения более 10 строк возникнет логический вакуум в решении задания.
         final int maxSentenceLines = minN;        //максимальная длинна одного предложения в строках, должна быть меньше или равна minN (иначе боль и мучения)

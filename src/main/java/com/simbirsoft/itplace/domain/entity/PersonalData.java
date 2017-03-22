@@ -1,6 +1,7 @@
 package com.simbirsoft.itplace.domain.entity;
+import com.simbirsoft.itplace.domain.entity.api.PersonalDataInt;
 
-public class PersonalData {
+public class PersonalData implements PersonalDataInt {
     /**
      * Свойство - Фамилия Имя Отчество
      */

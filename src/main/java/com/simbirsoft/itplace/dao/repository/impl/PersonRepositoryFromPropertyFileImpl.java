@@ -3,6 +3,7 @@ package com.simbirsoft.itplace.dao.repository.impl;
 import com.simbirsoft.itplace.common.constants.PersonPropertyKeys;
 import com.simbirsoft.itplace.dao.repository.PersonRepository;
 import com.simbirsoft.itplace.domain.entity.PersonalData;
+import com.simbirsoft.itplace.service.api.SummaryService;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -34,7 +35,7 @@ public class PersonRepositoryFromPropertyFileImpl implements PersonRepository {
      * @param configFileInput - поток файла настроек
      * @return - объект Properties
      */
-    private Properties getProperties(InputStream configFileInput) {
+    private Properties getProperties(InputStream configFileInput)  {
         Properties property = new Properties();
         try {
             property.load(new InputStreamReader(configFileInput, Charset.forName("UTF-8")));

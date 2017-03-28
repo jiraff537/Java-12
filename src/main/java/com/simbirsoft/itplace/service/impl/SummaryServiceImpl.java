@@ -1,6 +1,6 @@
 package com.simbirsoft.itplace.service.impl;
 
-import com.simbirsoft.itplace.dao.repository.PersonRepository;
+import com.simbirsoft.itplace.dao.repository.api.PersonRepository;
 import com.simbirsoft.itplace.dao.repository.impl.PersonRepositoryFromPropertyFileImpl;
 import com.simbirsoft.itplace.domain.entity.PersonalData;
 import com.simbirsoft.itplace.service.api.SummaryService;

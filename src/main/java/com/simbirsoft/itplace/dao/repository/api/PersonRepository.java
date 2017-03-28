@@ -1,4 +1,4 @@
-package com.simbirsoft.itplace.dao.repository;
+package com.simbirsoft.itplace.dao.repository.api;
 
 import com.simbirsoft.itplace.domain.entity.PersonalData;
 

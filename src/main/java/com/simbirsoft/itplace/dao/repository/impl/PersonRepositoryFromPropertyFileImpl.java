@@ -28,7 +28,10 @@ public class PersonRepositoryFromPropertyFileImpl implements PersonRepository {
 
     public PersonRepositoryFromPropertyFileImpl(InputStream configFileInput) {
         this.personDataFile = getProperties(configFileInput);
+        this.personDataFile.setProperty(PersonPropertyKeys.EXPERIENCES,CommaToLiTag(this.personDataFile.getProperty(PersonPropertyKeys.EXPERIENCES)));
         this.personDataFile.setProperty(PersonPropertyKeys.SKILLS,CommaToLiTag(this.personDataFile.getProperty(PersonPropertyKeys.SKILLS)));
+        this.personDataFile.setProperty(PersonPropertyKeys.ADDITIONAL_EDUCATIONS,CommaToLiTag(this.personDataFile.getProperty(PersonPropertyKeys.ADDITIONAL_EDUCATIONS)));
+
                 //(PersonPropertyKeys.SKILLS)//=;
     }
     //TO DONE: заменю "," на тэги <li></li> и добавлю <li> в начало и </li> в конец
